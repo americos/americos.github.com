@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>
+      Google Visualization API Sample
+    </title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['table', 'columnchart']});
+    </script>
+    <script type="text/javascript">
+
+      function drawVisualization() {
+        var dataTable = google.visualization.arrayToDataTable([
+          ['Name',   'Age', 'Instrument', 'Color'],
+          ['John',   24,     'Guitar',    'Blue'],
+          ['Paul',   52,     'Sitar',     'Red'],
+          ['George', 16,     'Guitar',    'Green'],
+          ['Ringo',  72,     'Drums',     'White']
+        ]);
+      
+        var table = new google.visualization.Table(document.getElementById('table'));
+        table.draw(dataTable, null);
+      
+        var dataView = new google.visualization.DataView(dataTable);
+        dataView.setColumns([0, 1]);
+      
+        var chart = new google.visualization.ColumnChart(document.getElementById('chart'));
+        chart.draw(dataView, {width: 400, height: 200});
+      }
+      
+      
+
+      google.setOnLoadCallback(drawVisualization);
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div>The Original Data Table</div>
+    <div id="table"></div>
+    <br />
+    <div>A Data View Chart</div>
+    <div id="chart"></div>
+  </body>
+</html>
+​

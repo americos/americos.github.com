@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- jQuery UI -->
+    <link href="../../vendor/jQueryUI/themes/eggplant/jquery-ui.css" rel="stylesheet">
+    <script src="../../vendor/jQueryUI/jquery-ui.min.js"></script>
+
+    <!-- Americo Goolge Maps Key - created on 10/15/2014 -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHQ21lMe4iV4BbKNbo4bKxaxvgaC6MQxY&sensor=false">
+    </script>
+
+    <link rel="stylesheet" href="../../css/google_maps.css">
+      <script src="../../js/google_maps.js"></script>
+
+    <script type="text/javascript">
+      function initialize() {
+
+        var sample_donors_logic = {
+          data: [
+            [406, "", "", "2699 Peachtree Rd. NE", "Atlanta", "Georgia", 
+            30305, "4046189459", null, "Fri Mar 30 2012 00:00:00 GMT-0400 (EDT)",
+            "Annual Appeal-2012", 665,665,0,"",33.828578, -84.387431],
+            [407, "", "", "22 Peachtree Rd. NE", "Atlanta", "Georgia", 
+            30305, "4046189459", null, "Fri Mar 30 2012 00:00:00 GMT-0400 (EDT)",
+            "Annual Appeal-2012", 665,665,0,"",33.8934, -84.32745]
+          ],
+          pledgeAverage: 500
+        }
+
+        var m = new google_maps({
+          container: "map_canvas",
+          data: sample_donors_logic.data,
+          lat: 15, //INDEXES
+          lon: 16,
+          iconPath: "../../images/map_markers/",
+          pledgeAverage : sample_donors_logic.pledgeAverage,
+          center: new google.maps.LatLng(33.828578 , -84.387431), //Lat and lon Christ the King: 2699 Peachtree Road Northeast  Atlanta, GA 30305
+          zoom: 10
+          // points : [
+          //  { Latitude: 40.397, Longitude: -99.99},
+          //  { Latitude: 33.967441, Longitude: -84.542310}
+          // ]
+        });
+
+        // var mapOptions = {
+        //   center: new google.maps.LatLng(40.397, -100.644),
+        //   zoom: 4,
+        //   mapTypeId: google.maps.MapTypeId.ROADMAP
+        // };
+        
+        // var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+
+
+        // var marker = "";
+        // console.time("ame");
+        // for(var i=30; i< 40; i++){
+        //   marker = new google.maps.Marker({
+        //     map: map,
+        //     icon: "../../images/map_markers/house-purple.png",
+        //     position: new google.maps.LatLng( i, -100.644)
+        //   });
+        // }
+        // console.timeEnd("ame");
+
+        
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>

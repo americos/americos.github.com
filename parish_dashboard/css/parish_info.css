@@ -1,0 +1,38 @@
+.parish_amounts{
+	float: right;
+	color: #a6a6a6; /*light grey*/
+}
+.parish_percents{
+	float: right;
+	color: #a6a6a6; /*light grey*/
+}
+.parish_numbers{
+	float: right;
+	color: #a6a6a6; /*light grey*/
+}
+
+.parish_labels{
+	float: left;
+	color: #9b5257;
+	margin-bottom: 0; /*Overriding some bootsrap default*/
+}
+
+.logo{
+	height: 50px;
+	padding: 5px;
+}
+
+.logo_container{
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.amounts_container{
+	width: 100%;
+}
+
+.pastor{
+	color: #9b5257;
+	font-size: 11px;	
+}

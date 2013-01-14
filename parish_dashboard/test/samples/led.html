@@ -1,0 +1,116 @@
+<html>
+	<head>
+		<title>Test Led</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="../../vendor/FusionCharts/FusionCharts.js"></script>
+		<script type="text/javascript" src="../../vendor/FusionCharts/FusionCharts.jqueryplugin.js"></script>
+
+		<script type="text/javascript">
+
+			jQuery(document).ready(function() {
+
+				//FusionCharts.setCurrentRenderer('javascript');
+
+				/*
+					Horizontal XML Led Chart
+				 */
+				var dataString ='<chart manageResize="1" chartBottomMargin="5" lowerLimit="0" upperLimit="100" numberSuffix="%" showTickMarks="1" tickValueDistance="0"  majorTMNumber="5" majorTMHeight="4" minorTMNumber="0" showTickValues="1" decmials="0" ledGap="2" ledSize="2" ledBoxBgColor="333333" ledBorderColor="666666" borderThickness="2" chartRightMargin="20" >\n\
+					<colorRange>\n\
+						<color minValue="0" maxValue="30" code="00FF00" />\n\
+						<color minValue="30" maxValue="50" code="FFFF00" />\n\
+						<color minValue="50" maxValue="100" code="FF0000" />\n\
+					</colorRange>\n\
+					<value>80</value>\n\
+				</chart>'; 
+
+				var chart = new FusionCharts("../../Vendor/FusionCharts/Charts/HLED.swf", "ChartId", "340", "100", "0", "1" );
+        chart.setXMLData( dataString );
+        chart.render("hled");
+
+        /*
+        	Vertical JSON Led Chart
+         */
+        var value = "800000";
+        var max_value = "1000000";
+        var third = Math.round(max_value / 3);
+
+				var json_data ={
+					"chart": {
+						"manageresize": "1",
+						"chartbottommargin": "5",
+						"lowerlimit": "0",
+						"upperlimit": max_value,
+						"numbersuffix": "",
+						"numberprefix": "$",
+						"showtickmarks": "1",
+						"tickvaluedistance": "0",
+						"majortmnumber": "5",
+						"majortmheight": "4",
+						"minortmnumber": "0",
+						"showtickvalues": "1",
+						"decmials": "0",
+						"ledgap": "2",
+						"ledsize": "2",
+						"ledboxbgcolor": "333333",
+						"ledbordercolor": "666666",
+						"borderthickness": "2",
+						"chartrightmargin": "20"
+					},
+					"colorrange": {
+						"color": [
+							{
+								"minvalue": "0",
+								"maxvalue": third,
+								"code": "FF0000"
+							},
+							{
+								"minvalue": third,
+								"maxvalue": third + third,
+								"code": "FFFF00"
+							},
+							{
+								"minvalue": third + third,
+								"maxvalue": max_value,
+								"code": "00FF00"
+							}
+						]
+					},
+					"value": value
+				};
+
+         var chart = new FusionCharts("../../Vendor/FusionCharts/Charts/VLED.swf", "ChartId2", "180", "300", "0", "1" );
+	        chart.setJSONData( json_data );
+	        chart.render("vled");
+			
+
+				var chart3 = jQuery("#vled2").insertFusionCharts({
+               swfUrl: "../../Vendor/FusionCharts/Charts/VLED.swf", 
+               dataSource: json_data, 
+               dataFormat: "json", 
+               //renderer: 'javascript',
+               width: "180", 
+               height: "300", 
+               id: "myChartId3"
+         });
+
+     }); 
+			
+		</script>
+
+	</head>
+	<body>
+
+		<h2>Led Test</h2>
+		<p>
+			<div id="hled" align="center">Chart will load here</div>	
+		</p>
+		<p>
+			<div align="center">Total Amount Pledged</div>
+			<div id="vled" align="center">Chart will load here</div>	
+		</p>
+		<p>
+			<div id="vled2" align="center">Chart will load here</div>	
+		</p>		
+
+	</body>
+</html>

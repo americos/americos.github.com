@@ -1,0 +1,127 @@
+body{
+	background: #440100;
+	margin: auto;
+}
+
+.widgetsTable{
+	width: 100%;
+	height: 70%;
+}
+/*.widgetsTable tr {
+	vertical-align:	top;
+}
+
+.widgetsTable tr td{
+	width: 450px;
+	height: 300px;
+}*/
+
+.component_title{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 16px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	color: #c1c1c1;
+}
+
+.in_progress{
+	color: white;
+	display: table-cell;
+	height: 200px;
+	text-align: center;
+	vertical-align: middle;
+	width: 1%;
+	font-size: 12px;
+}
+
+/* Dialog CSS */
+.dialog_main_label{
+	font-size: 20px;
+}
+.dialog_key{
+	color: #9b5257; /* Adelante Pink*/
+}
+
+.details_table{
+	color: white;
+	font-size: 12px;
+	border: silver;
+	text-align: center;
+	border-width: 1px;
+	border-style: dashed;
+	width: 250px;
+}
+	.details_table th{
+		color: #9C75D6; /* Light Margenta*/
+	}
+
+	.details_table td{
+		padding: 3px;
+	}
+
+h4{
+	color: #A6A6A6; /* #9B5257; This is the pink/mamey color */ 
+	font-size: 25px;
+}
+h5{
+	color: #FFF; 
+	font-size:14px;
+}
+
+.marroon{
+	color: #9b5257;
+	font-size: 14px;
+}
+
+.needAssistanceButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.needAssistanceButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.needAssistanceButton:active {
+	position:relative;
+	top:1px;
+}
+
+.needAssistanceButtonAlignment{
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	z-index: 10;
+}
+
+.roundedCorners{
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px; /* future proofing */
+	-khtml-border-radius: 10px; /* for old Konqueror browsers */
+}
+
+.stacked_chart_container{
+	padding:5px;
+	border: 1px solid #C4C4C4;
+	width:200px;
+	margin: auto;
+	background:#c4c4c4;
+}

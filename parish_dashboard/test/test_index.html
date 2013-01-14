@@ -1,0 +1,649 @@
+<html>
+	<head>
+		<title>Test Index</title>
+
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<!-- jQuery UI -->
+		<link href="../vendor/jQueryUI/themes/eggplant/jquery-ui.css" rel="stylesheet">
+		<script src="../vendor/jQueryUI/jquery-ui.min.js"></script>
+
+		<!-- jQuery Plugins -->
+		<script src="../vendor/jQuery/plugins/jquery.formatCurrency-1.4.0.min.js"></script>
+
+		<!-- Twitter Bootstrap -->
+		 <!-- Bootstrap -->
+    	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    	<!-- Google Graphs -->
+    	<script type='text/javascript' src='https://www.google.com/jsapi'></script>
+
+    	<!-- Underscore.js -->
+    	<script type="text/javascript" src="../vendor/underscore/underscore.js"></script>
+
+    	<!-- Americo Goolge Maps Key - created on 10/15/2014 -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHQ21lMe4iV4BbKNbo4bKxaxvgaC6MQxY&sensor=false"></script>
+
+    	<!-- Fusion Widgets -->
+    <script type="text/javascript" src="../vendor/FusionCharts/FusionCharts.js"></script>
+		<script type="text/javascript" src="../vendor/FusionCharts/FusionCharts.jqueryplugin.js"></script>
+
+		<!-- Includes -->
+			<!-- Parish Info -->
+			<link rel="stylesheet" href="../css/parish_info.css">
+			<script src="../js/parish_info.js"></script>
+			
+			<!-- Google Gauge -->
+			<script src="../js/google_gauge.js"></script>
+			<script src="components/test_google_gauge.js"></script>
+
+			<!-- Google Chart Range Filter -->
+			<script src="../js/google_chart_range_filter.js"></script>
+			<script src="components/test_google_chart_range_filter.js"></script>
+
+			<!-- Google Grid -->
+			<link rel="stylesheet" href="../css/google_grid.css">
+			<script src="../js/google_grid.js"></script>
+			<!-- Donors Grid Logic -->
+			<script src="../js/donors_grid_logic.js"></script>
+
+			<!-- Google Map -->
+			<link rel="stylesheet" href="../css/google_maps.css">
+			<script src="../js/google_maps.js"></script>
+
+			<!-- Fusion Led -->
+			<script src="../js/fusion_led.js"></script>
+
+			<!-- Pie Chart -->
+			<script src="../js/google_chart_pie.js"></script>
+
+			<!-- Fusion Pyramid -->
+			<script src="../js/fusion_pyramid.js"></script>
+
+			<!-- Fusion Stacked -->
+			<script src="../js/fusion_stacked.js"></script>
+
+		<style type="text/css">
+			
+			.component{
+				width: 350px;
+			}
+
+			/* Dialog CSS */
+			.dialog_main_label{
+				font-size: 20px;
+			}
+			.dialog_key{
+				color: #9b5257; /* Adelante Pink*/
+			}
+
+			.details_table{
+				color: white;
+				font-size: 12px;
+				border: silver;
+				text-align: center;
+				border-width: 1px;
+				border-style: dashed;
+				width: 250px;
+			}
+			.details_table th{
+				color: #9C75D6; /* Light Margenta*/
+			}
+			.details_table td{
+				padding: 3px;
+			}
+
+			h5{
+				color: #9B5257;
+				font-size:14px;
+			}
+		</style>
+
+		<script type="text/javascript">
+
+
+		jQuery(document).ready(function() {
+
+			var TEST_MODE = false;
+			// var SERVER_IP = "184.72.248.57";
+			var SERVER_IP = "107.6.99.98:8080"; //Adelante IP server
+			// var SERVER_IP = "bigdata.jackbe.com";
+
+
+			var GOAL = 364499; //STATIC NUMBER, THIS VALUE SHOULD BE PROVIDED BY PARISH
+
+
+			//jQuery("#tabs").tabs();
+
+			/* Loading Google Visuzalizations */
+			google.load('visualization', '1',
+				{
+					packages: ['gauge', 'corechart', 'controls', 'table'],
+					callback : function(){
+						
+						
+						var service_name = "solicitor";
+						// if(TEST_MODE) service_name = "solicitorx";
+						if(TEST_MODE) service_name = "solicitory";
+
+						//Get Real data from Source
+						jQuery.ajax({
+							type:"get",
+							url: "http://"+SERVER_IP+"/presto/edge/api/rest/"+service_name+"/getData?x-presto-resultFormat=json",
+							crossDomain:true,
+							dataType: "jsonp",
+							success: function(response){
+								
+								var data = response["e:DataTable"]["e:Entry"];
+							  console.log("Data from Presto (",SERVER_IP,"):", data);
+								
+
+								var donors_logic = new donors_grid_logic({
+									data: data,
+									goal : GOAL,
+									current_year: 2012
+								});
+								console.log("Donors Logic:", donors_logic);
+
+								var donors_logic_rows = donors_logic.getRows();
+								console.log("Donors Logic - Get Rows:", donors_logic_rows);
+
+								var TOTAL_AMOUNTS = donors_logic.getTotalAmounts();
+								console.log("TOTAL_AMOUNTS:", TOTAL_AMOUNTS);
+
+
+								/*
+									Gauges
+								 */
+								var year1 = 2012;
+								var max = 2000;
+
+								var g = testGoogleGauge({
+									container: "chart_div",
+									max: max,
+									data: [
+										['Label', 'Value'],
+										['2012', donors_logic.getNumberOfUniqueDonorsForYear(year1)]
+									]
+								});
+
+								g.render();
+
+
+								/*
+									Line Chart
+								 */
+								var g = new google_chart_range_filter({
+									title: "Year-over-Year Campaign Comparison",
+									columns: [
+										{ type: "string", value: "Year" },
+										{ type: "number", value: "Campaign Goal" },
+										{ type: "number", value: "Amount Paid" }
+									],
+									data: [
+										["2008", 366898, 427686 ],
+										["2009", 382708, 398678 ],
+										["2011", 363533, 391684 ],
+										["2010", 344230, 437598 ],
+										["2012", 364499, 400000 ] //Need to provide this number	
+									],
+									container: "line_chart_container"
+								});
+								
+								g.render();
+
+
+								/*
+									FAKE Google MAPS: It's not rendered, its for getting the total # of markers for the Pyramid chart
+								 */
+								var m = new google_maps({
+									container: "fake_map_canvas",
+									data: donors_logic.getRows(),
+									iconPath: "../images/map_markers/",
+									lat: 15, //INDEXES
+									lon: 16,
+									pledgeAverage : donors_logic.getAmountPledgedAverage(),
+									center: new google.maps.LatLng(33.828578 , -84.387431), //Lat and lon Christ the King: 2699 Peachtree Road Northeast  Atlanta, GA 30305
+									zoom: 10
+								});
+
+								/*
+									Pyramid
+								 */
+								var total_map_markers = m.getTotalMarkersCount();
+								console.log("total_map_markers:", total_map_markers);
+
+								m.destroy(); //Destroying this map since I don't need it anymore.
+
+								 var g = new fusion_pyramid({
+								 	container: "pyramid_chart_container",
+								 	graphPath: "../vendor/FusionCharts/Charts/",
+								 	width: 550,
+									height:300,
+									backgroundColor: "C0BACC", //Cool light purple,
+									total_map_markers: total_map_markers, //Passing this object for the graphs annotations
+								 	data: [
+										{
+											"value": "102494",
+											// "issliced": "1",
+											"color": "801ACF", //Purple
+											"label": "Lumen Christi Society"
+										},
+										{
+											"value": "248982",
+											"color": "A8CF53", //Green
+											"label": "Above Average Amount"
+										},
+										{
+											"value": "182731",
+											"color": "EFAC32", //Yellow/Orange
+											"label": "Below Average Amount"
+										}
+									]
+								 });
+								 g.render();
+
+								 /*
+								 	Stacked Chart
+								  */
+								 
+								 var g = new fusion_stacked({
+								 		container: "stacked_chart",
+								 		graphPath: "../vendor/FusionCharts/Charts/",
+								 		width: 200,
+								 		height: 250,
+								 		data: {
+								 			goal: TOTAL_AMOUNTS["goal"],
+								 			amount_paid_and_outstanding_pledges: TOTAL_AMOUNTS["amount_paid_and_outstanding_pledges"],
+								 			amount_paid: TOTAL_AMOUNTS["amount_paid"]
+								 		}
+								 });
+								 g.render();
+
+
+								/*
+									Grid
+								 */
+
+								var g = new google_grid({
+									container: "grid_container",
+									columns: donors_logic.getColumns(),
+									dateColumnIndex: 9, //INDEXES
+									amountColumnIndex: [11,12,13],
+									dateFormatType: "short", // "medium", "long" are valid options too
+									rows: donors_logic_rows,
+									onRowClick: donors_logic.onRowClick,
+									hideColumns: [7,8,14,15,16] //Hide these columns
+								})
+
+								g.render();
+
+
+								// var data = google.visualization.arrayToDataTable([
+				    //       ['Name', 'Age'],
+				    //       ['Michael' , 12],
+				    //       ['Elisa', 20],
+				    //       ['Robert', 7],
+				    //       ['John', 54],
+				    //       ['Jessica', 22],
+				    //       ['Aaron', 3],
+				    //       ['Margareth', 42],
+				    //       ['Miranda', 33]
+				    //     ]);
+
+								
+				    //     // Define a StringFilter control for the 'Name' column
+				    //     var stringFilter = new google.visualization.ControlWrapper({
+				    //       'controlType': 'StringFilter',
+				    //       'containerId': 'filter',
+				    //       'options': {
+				    //         'filterColumnIndex': 2,
+				    //         matchType: "any"
+				    //       }
+				    //     });
+				      
+				    //     // Define a table visualization
+				    //     var table = new google.visualization.ChartWrapper({
+				    //       'chartType': 'Table',
+				    //       'containerId': 'grid_container',
+				    //       'options': {'height': '13em', 'width': '20em'}
+				    //     });
+
+				        
+				    //     // Create the dashboard.
+				    //     var dashboard = new google.visualization.Dashboard(document.getElementById('dash')).
+				    //       // Configure the string filter to affect the table contents
+				    //       bind(stringFilter, table ).
+				    //       // Draw the dashboard
+				    //       draw( g.getDataTable() );
+
+  							/*
+									Google Map
+								 */
+								
+								var m = new google_maps({
+									container: "map_canvas",
+									data: donors_logic_rows,
+									lat: 15, //INDEXES
+									lon: 16,
+									iconPath: "../images/map_markers/",
+									pledgeAverage : donors_logic.getAmountPledgedAverage(),
+									center: new google.maps.LatLng(33.828578 , -84.387431), //Lat and lon Christ the King: 2699 Peachtree Road Northeast  Atlanta, GA 30305
+									zoom: 10
+									// points : [
+									// 	{ Latitude: 40.397, Longitude: -99.99},
+									// 	{ Latitude: 33.967441, Longitude: -84.542310}
+									// ]
+								});
+								
+								jQuery("#clear_markers").click(function(){
+									m.clearMarkers();
+								})
+								jQuery("#add_markers").click(function(){
+									m.addMarkers();
+								})
+								
+								jQuery("#show_green").button();
+								jQuery("#show_green").click(function(){
+									m.filterMarkersByColor("green");
+								})
+								jQuery("#show_yellow").click(function(){
+									m.filterMarkersByColor("yellow");
+								})
+								jQuery("#show_red").click(function(){
+									m.filterMarkersByColor("red");
+								})
+								jQuery("#show_purple").click(function(){
+									m.filterMarkersByColor("purple");
+								})
+								jQuery("#center_map").click(function(){
+									m.centerMap();
+								})
+
+								
+								/*
+									Pie Chart (depends on Map)
+								 */
+								var total_map_markers = m.getTotalMarkersCount();
+
+								g = new google_chart_pie({
+									container: "pie_chart",
+									title: "Average Gift Data",
+									columns: [
+										{ type: "string", value: "Average"},
+										{ type: "number", value: "Value"}
+									],
+									data: [
+										['Above Median Fift Amt', total_map_markers["green"] ],
+								    ['Below Median Fift Amt', total_map_markers["yellow"] ],
+								    ['No Gift This Year', total_map_markers["red"] ],
+								    ['Lumen Christi Society', total_map_markers["purple"] ]
+									]
+								})
+								g.render();
+
+
+								/*
+									LED's
+								 */
+								var led1 = new fusion_led({
+									container: "led_1",
+									id: "led_goal",
+									value: GOAL,
+									max_value: GOAL,
+									width: 180,
+									graphPath: "../vendor/FusionCharts/Charts/"
+								})
+								led1.render();
+
+								var led2 = new fusion_led({
+									container: "led_2",
+									id: "led_amount_paid_outstanding_pledges",
+									value: TOTAL_AMOUNTS.amount_paid_and_outstanding_pledges,
+									width: 180,
+									max_value: GOAL,
+									graphPath: "../vendor/FusionCharts/Charts/"
+								})
+								led2.render();
+
+
+								/* 
+									PARISH INFO 
+								*/
+								var t = new parish_info({
+									//logo:'../images/AAA_Generic_Logo.jpg',
+									data: TOTAL_AMOUNTS
+								});
+								t.render();
+								// jQuery("#update_parish_info").click( function(){
+								// 	t.refresh();
+								// })
+
+							}// end success
+						});
+
+						
+
+					}
+				}
+			); //End google.load Visualization
+
+			
+
+			
+		}); // End onReady
+
+		</script>
+
+	</head>
+		<h2>Testing Parish Dashboard Components</h2>
+	<body>
+		
+		<p>Parish Info</p>
+		<button id="update_parish_info">Update</button>
+		<div id="parish_info_cont"></div>
+
+		<hr>
+
+		<p>Gauge</p>
+		<div id="chart_div"></div>
+
+		<hr>
+
+		<div id="tabs" style="width:600px;height:500px;">
+	    <ul>
+	        <li><a href="#tabs-1">Nunc tincidunt</a></li>
+	        <li><a href="#tabs-2">Proin dolor</a></li>
+	        <li><a href="#tabs-3">Aenean lacinia</a></li>
+	    </ul>
+	    <div id="tabs-1">
+	        <div id="line_chart_container" style="width:600px;height:500px;"></div>
+	    </div>
+	    <div id="tabs-2">
+	        <p>Tab2</p>
+	    </div>
+	    <div id="tabs-3">
+	        <p>Tab3</p>
+	    </div>
+	</div>
+
+		<p>Pie Chart</p>
+		<div id="pie_chart" style="width: 600px; height: 500px;"></div>
+			
+
+		<div id="fake_map_canvas"></div>
+
+		<p>
+			Pyramid Chart	
+		</p>	
+		<div id="pyramid_chart_container" style="width: 600px; height: 500px;"></div>
+
+		<p>
+			<div id="stacked_chart"></div>
+		</p>
+
+		<hr>
+
+		<p>LED's</p>
+		<div style="width:500px;height:400px">
+			<table style="width:100%">
+				<tr>
+					<td style="text-align:center;">
+						<span id="led_1"></span>
+						<h5>Goal</h5>
+					</td>
+					<td style="text-align:center;">
+						<span id="led_2"></span>	
+						<h5>Amount Paid + Outstanding Pledges</h5>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		
+		
+		<p>Google Map</p>
+		<button class="generic_button" id="clear_markers">Clear Markers</button>
+		<button title="Show all pins in map" class="generic_button" id="add_markers">Add all Markers</button>
+		<button title="Plege/Gift above average" class="green_button" id="show_green">Green</button>
+		<button title="Pledge/Gift below average" class="yellow_button" id="show_yellow">Yellow</button>
+		<button title="No Pledge/Gift" class="red_button" id="show_red">Red</button>
+		<button title="Plege/Gift over $1,500" class="purple_button" id="show_purple">Purple</button>
+		<button class="generic_button" id="center_map">Center Map</button>
+
+		<div id="map_canvas" style="width:700px; height:450px;"></div>	
+		
+		<hr>
+
+		<p>Grid</p>
+		<div id="dash">
+			<div id="filter"></div>
+			<div id="grid_container" style="width:1200px;height:900px;"></div>	
+		</div>
+		
+
+		<h2>View w/email column hidden</h2>
+		<div id="grid_data_view" style="width:1200px;height:900px;"></div>
+
+		<div id="dialog_container" title="Details">
+			
+			<!-- Donor Details -->
+			<span style="float:left;padding:5px;width:50%">
+				<label class="dialog_main_label">Donor Details</label>
+				<div> 
+					<label class="dialog_key">Constituency ID</label> 
+					<label>923622</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Name</label> 
+					<label>Americo Savinon</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Address</label> 
+					<label>Some Address ct</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Phone</label> 
+					<label>202.286.1415</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Email</label> 
+					<label>americos@gmail.com</label> 
+				</div>
+			</span>
+			
+			<!-- Transaction Details -->
+			<span>
+				<label class="dialog_main_label">Transaction Details</label>
+				<div> 
+					<label class="dialog_key">Pledge Date</label> 
+					<label>03/04/2012</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Amount Pledged</label> 
+					<label>$560</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Pledge Paid</label> 
+					<label>$300</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Balance Due</label> 
+					<label>$140</label> 
+				</div>
+				<div> 
+					<label class="dialog_key">Details</label> 
+					<table class="details_table">
+						<tr>
+							<th>Date</th>
+							<th>Amount</th>
+							<th>Type</th>
+						</th>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+						<tr>
+							<td>01/01/2012</td>
+							<td>$100</td>
+							<td>Cash</td>
+						</tr>
+					</table>
+				</div>
+				
+			</span>
+	  </div>
+
+	</body>
+</html>

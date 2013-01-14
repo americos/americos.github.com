@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Test Stacked</title>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="../../vendor/FusionCharts/FusionCharts.js"></script>
+		<script type="text/javascript" src="../../vendor/FusionCharts/FusionCharts.jqueryplugin.js"></script>
+
+		<script type="text/javascript">
+
+			jQuery(document).ready(function() {
+
+				// FusionCharts.setCurrentRenderer('javascript');
+
+				var json_data= {
+				  "chart": {
+				    // "palette": "0",
+				    "caption": "",
+				    "showlabels": "1",
+				    "showvalues": "0",
+				    "numberprefix": "$",
+				    //"bgColor": "3D3644",
+				    "bgColor": "C4C4C4",
+				    "bgalpha": "100",
+				    "showsum": "0",
+				    showBorder : 0,
+				    canvasBgColor: "C4C4C4",
+				    "decimals": "2",
+				    "useRoundEdges": "1",
+					baseFontColor: "000000",
+				    "formatNumberScale":  "0"
+				    // "legendborderalpha": "0"
+				  },
+				  "categories": [
+				    {
+				      "category": [
+				        {
+				          "label": ""
+				        }
+				      ]
+				    }
+				  ],
+				  "dataset": [
+				    {
+				      "seriesname": "Goal",
+				      "color": "#C0BACC",
+				      "showvalues": "1",
+				      "data": [
+				        {
+				          "value": "400001.34"
+				        }
+				      ]
+				    },
+				    {
+				      "seriesname": "Amount Paid & Outstanding Pledges",
+				      "color": "#aa7b7e",
+				      "showvalues": "1",
+				      "data": [
+				        {
+				          "value": "57401.85"
+				        }
+				      ]
+				    },
+				    {
+				      "seriesname": "Amount Paid",
+				      "color": "#eab4e9",
+				      "showvalues": "1",
+				      "data": [
+				        {
+				          "value": "64000"
+				        }
+				      ]
+				    }
+				  ]
+				}
+
+        var chart = new FusionCharts("../../Vendor/FusionCharts/Charts/StackedColumn2D.swf", "ChartZZZ", "180", "400", "0", "1" );
+				chart.setJSONData( json_data );
+        chart.render("chart_container");
+
+			})
+		</script>
+
+	<body>
+		<div id="xx" style="padding:20px;border: 1px solid #C4C4C4; width:200px;background:#c4c4c4;-webkit-border-radius:10px;">
+			<div id="chart_container"></div>	
+		</div>
+		
+	</body>
+</html>

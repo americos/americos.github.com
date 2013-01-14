@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app draggable="false" height="800" id="parish_dashboard" jsclass="Parish.init"
+     minimizable="false"
+     name="parish_dashboard"
+     hideheader="true"
+     width="1200">
+	  <title></title>
+	  <description/>
+
+	  <properties></properties>
+
+	  <presto-meta name="presto.desktopCompatible" type="text">true</presto-meta>
+	  <presto-meta name="presto.phoneCompatible" type="text">false</presto-meta>
+	  <presto-meta name="presto.tabletCompatible" type="text">false</presto-meta>
+
+	  <requires>
+ 			<!-- jQueryUI -->
+ 			<require src="vendor/jQueryUI/jquery-ui.min.js" type="script"/>
+ 			<!-- jQueryUI Theme -->
+			<require src="vendor/jQueryUI/themes/eggplant/jquery-ui.css" type="css"/>	  
+			<!-- jQuery Plugins -->
+			<require src="vendor/jQuery/plugins/jquery.formatCurrency-1.4.0.min.js" type="script"/>
+
+			<!-- Twitter Bootstrap -->
+			<require src="vendor/bootstrap/css/bootstrap.min.css" type="css"/>
+			<!-- <require src="vendor/bootstrap/js/bootstrap.min.js" type="js"/>			 -->
+
+			<!-- Google Graphs -->
+			<require src="https://www.google.com/jsapi" type="script"/>
+
+			<!-- Americo Goolge Maps Key - created on 10/15/2014 -->
+    		<require type="script" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHQ21lMe4iV4BbKNbo4bKxaxvgaC6MQxY&amp;sensor=false&amp;callback=isNaN" />
+
+			<!-- Underscore.js -->
+			<require src="vendor/underscore/underscore.js" type="script"/>
+
+			<!-- Fusion Widgets -->
+			<require src="vendor/FusionCharts/FusionCharts.js" type="script"/>
+			<!-- <require src="vendor/FusionCharts/FusionCharts.jqueryplugin.js" type="script"/> -->
+			
+			<!-- App Requires -->
+				<!-- parish_info -->
+				<require src="css/parish_info.css" type="css"/>
+				<require src="js/parish_info.js" type="script"/>
+
+				<!-- Google Gauge -->
+				<require src="js/google_gauge.js" type="script"/>
+
+				<!-- Google Chart Range Filter -->
+				<require src="js/google_chart_range_filter.js" type="script"/>
+
+				<!-- Google Grid -->
+				<require src="css/google_grid.css" type="css" />
+				<require src="js/google_grid.js" type="script" />
+				<!-- Donors Grid Logic -->
+				<require src="js/donors_grid_logic.js" type="script" />
+
+				<!-- Google Maps -->
+				<require src="css/google_maps.css" type="css"/>
+				<require src="js/google_maps.js" type="script" />
+
+				<!-- Google Pie Chart -->
+				<require src="js/google_chart_pie.js" type="script" />
+
+				<!-- Fusion Led -->
+				<require src="js/fusion_led.js" type="script" />
+				<!-- Fusion Pyramid -->
+				<require src="js/fusion_pyramid.js" type="script" />
+				<!-- Fusion Stacked -->
+				<require src="js/fusion_stacked.js" type="script" />
+
+		    <require src="js/app.js" type="script"/>
+		    <require src="css/app.css" type="css"/>
+		    <require src="html/app.html" type="html"/>
+
+		    	
+
+	  </requires>
+</app>

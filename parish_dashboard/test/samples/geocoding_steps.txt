@@ -1,0 +1,46 @@
+- Start in Excel: Create Csv with ID and address
+- Create js array
+	ID column: 						=CONCATENATE("['",A2, "'")
+	Street, City, State column: 	=CONCATENATE("'",B2,"'")
+	zip column: 					=CONCATENATE("'",E2, "']")
+- Save as .csv file
+- Open in Sublime: Replace any " and # for empty spaces
+- Replace any ' for "
+- Replace any ] for ],
+- Create js array in console (I called it arr in this sample)
+- call Yahoo Api:
+
+	var address = "";
+	var record = "";
+	jQuery.each(arr, function(index, elem){
+	  address = jQuery.trim(elem[1] + "," + elem[2] + "," + elem[3])
+	  //console.log( address )
+		
+		jQuery.ajax({
+		  url : "http://where.yahooapis.com/geocode?location="+address+"&flags=J&appid=qQR.33DV34FcCk8cBH.y1e1aoADzxOBnFmrSm95C1ncUjbuEowUtJllT0jIJjm0-",
+		  async: false,
+		  success: function(response){
+		   //console.log("response: ", response);
+		   record = response["ResultSet"]["Results"][0];
+		   console.log( record.latitude, ",", record.longitude, ",", address)
+		  },
+		  error: function(jqXHR, textStatus, errorThrown){
+		   console.error("Error text status:", textStatus, " :: errorThrown:", errorThrown);
+		  }
+		})
+	  
+	})
+
+
+- if api call fails, use single address call:
+	jQuery.ajax({
+	  url : "http://where.yahooapis.com/geocode?location=663 Elmwood Drive,Atlanta,Georgia&flags=J&appid=qQR.33DV34FcCk8cBH.y1e1aoADzxOBnFmrSm95C1ncUjbuEowUtJllT0jIJjm0-",
+	  success: function(response){
+	   console.log("response: ", response);
+	   var record = response["ResultSet"]["Results"][0];
+	   console.log( record.latitude, ",", record.longitude, ",", address)
+	  }
+	})
+
+- Copy Results back into Excel, grab results and save them as csv
+- Open saved csv and add columns to main data sheet

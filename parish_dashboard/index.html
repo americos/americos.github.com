@@ -1,0 +1,230 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Parish Dashboard</title>
+
+
+    <!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- jQueryUI -->
+		<script src="vendor/jQueryUI/jquery-ui.min.js" type="text/javascript"></script>
+		<!-- jQueryUI Theme -->
+		<link rel="stylesheet" href="vendor/jQueryUI/themes/eggplant/jquery-ui.css">
+		
+		<!-- jQuery Plugins -->
+		<script src="vendor/jQuery/plugins/jquery.formatCurrency-1.4.0.min.js" type="text/javascript"> </script>
+
+		<!-- Twitter Bootstrap -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		
+		<!-- Google Graphs -->
+		<script src="https://www.google.com/jsapi" type="text/javascript"> </script>
+
+		<!-- Americo Goolge Maps Key - created on 10/15/2014 -->
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDHQ21lMe4iV4BbKNbo4bKxaxvgaC6MQxY&sensor=false"> </script>
+
+		<!-- Underscore.js -->
+		<script src="vendor/underscore/underscore.js" type="text/javascript"></script>
+
+		<!-- Fusion Widgets -->
+		<script src="vendor/FusionCharts/FusionCharts.js" type="text/javascript"></script>
+
+
+		<!-- Includes -->
+			<!-- Parish Info -->
+			<link rel="stylesheet" href="css/parish_info.css">
+			<script src="js/parish_info.js"></script>
+			
+			<!-- Google Gauge -->
+			<script src="js/google_gauge.js"></script>
+			
+			<!-- Google Chart Range Filter -->
+			<script src="js/google_chart_range_filter.js"></script>
+			
+			<!-- Google Grid -->
+			<link rel="stylesheet" href="css/google_grid.css">
+			<script src="js/google_grid.js"></script>
+			<!-- Donors Grid Logic -->
+			<script src="js/donors_grid_logic.js"></script>
+
+			<!-- Google Map -->
+			<link rel="stylesheet" href="css/google_maps.css">
+			<script src="js/google_maps.js"></script>
+
+			<!-- Fusion Led -->
+			<script src="js/fusion_led.js"></script>
+
+			<!-- Pie Chart -->
+			<script src="js/google_chart_pie.js"></script>
+
+			<!-- Fusion Pyramid -->
+			<script src="js/fusion_pyramid.js"></script>
+
+			<!-- Fusion Stacked -->
+			<script src="js/fusion_stacked.js"></script>
+
+			<!-- App Js -->
+			<script src="js/app.js"></script>
+			<!-- App CSS -->
+			<link rel="stylesheet" href="css/app.css">
+
+			<script type="text/javascript">
+				jQuery(document).ready(function() {
+					var parish = new Parish();
+
+					parish.init();
+				});
+			</script>
+
+  </head>
+   <body>
+   	
+<div id="tabs" style="height:100%">
+	
+	<ul>
+		<li><a href="#tabs-1">Parish Overview</a></li>
+		<li><a href="#tabs-2">Gift Data</a></li>
+		<li><a href="#tabs-3">Map</a></li>
+	</ul>
+	<div id="tabs-1">
+		<div id="title" style="width:950px;margin:auto;text-align:center;">
+			<h2>Archdiocese of Atlanta - Archbishop's Annual Appeal 2012</h2>
+			<h4>Cathedral of Christ the King - Pastor: Fr. Frank McNamee</h4>
+		</div>
+		
+		<table class="widgetsTable">
+			<tr>
+
+				<!-- CAMPAIGN STATUS -->
+				<td style="vertical-align:top; width:33%;">
+					<div class="component_title">Campaign Status</div>
+					<div id="w11"></div>
+				</td>
+
+				<!-- THERMOMETHER -->
+				<td style="vertical-align:top;text-align:center;width:25%;">
+					<div class="component_title">Pledges & Gifts Toward Goal</div>
+					<!-- <div class="component_title">Amount Collected</div> -->
+
+					<div id="w12">
+						<table style="width:100%">
+							<tr>
+								<td style="text-align:center;">
+									
+									<!-- <span id="led_1"></span> -->
+									<div class="stacked_chart_container roundedCorners" id="stacked_chart_container">
+										<span id="stacked_chart"></span>	
+									</div>
+									
+								</td>
+							</tr>
+						</table>
+						<!-- <div class="in_progress">(Component in Progress)</div> -->
+					</div>
+				</td>
+
+				<!-- PYRAMID CHART -->
+				<td style="vertical-align:top;text-align:center;">
+					<div class="component_title">Average Gift Data</div>
+					<div id="pyramid_chart_container">
+						
+					</div>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<!-- SPEEDOMETERS -->
+				<td style="vertical-align:top;text-align:center;">
+					<div class="component_title">Year-Over-Year Household Participation</div>
+					
+
+					<table>
+						<tr>
+							<th><div class="marroon">Number of 2012 Donors</div></th>
+							<th><div class="marroon">Number of 2011 Donors</div></th>
+						</tr>
+						<tr>
+							<td><div class="speedometerContainer" id="speedometer1"></div></td>
+							<td><div class="speedometerContainer" id="speedometer2"></div></td>
+						</tr>
+						<tr>
+							<td><div class="marroon" style="text-align:center;"><!-- Number of Households as of October 18, 2012 --></div></td>
+							<td><div class="marroon" style="text-align:center;"><!-- Number of Households as of October 10, 2011 --></div></td>
+						</tr>
+					</table>
+
+					
+				</td>
+
+				<td colspan=2 style="vertical-align:top;text-align:center;">
+					<!-- LINE CHART -->
+					<div class="component_title">Year-over-Year Campaign Comparison</div>
+					<div id="line_chart_container" style="width:750px;height:200px;margin:auto;">
+						
+					</div>
+					
+				</td>
+			</tr>
+
+		</table>
+
+	</div>
+	<div id="tabs-2">
+
+		<!-- Google Grid -->
+		<table class="widgetsTable">
+			<tr>
+				<td>
+					<!-- <div class="component_title">Donor's Grid</div> -->
+					<div id="w21" style="width:1000px;margin:auto;height:680px;color:black;">
+						<!-- A HTML Table will live here -->
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div style="float:right;padding-top:3px;">
+						<input class="exportButton" id="export" type="button" value="Export">
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+	<div id="tabs-3">
+
+		<!-- Google Maps -->
+		<table class="widgetsTable">
+			<tr>
+				<td>					
+					<div id="w31">
+						<div class="map_buttons_container">
+							<button title="Show all pins in map" class="generic_button" id="add_markers">Show All Markers</button>
+							<button title="Pledge/Gift above average" class="green_button" id="show_green">Above Median Gift Amt</button>
+							<button title="Pledge/Gift below average" class="yellow_button" id="show_yellow">Below Median Gift Amt</button>
+							<button title="No Pledge/Gift" class="red_button" id="show_red">No Gift This Year</button>
+							<button title="Plege/Gift over $2,500" class="purple_button" id="show_purple">Lumen Christi Society</button>
+							<button class="generic_button" id="center_map">Center Map</button>
+
+						</div>
+						<div id="map_canvas" style="width:100%;height:680px;"></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- Dialog Container -->
+	<div id="dialog_container" title="Details"></div>
+	
+	<!-- Fake Map Canvas -->
+	<div id="fake_map_canvas" style="display:none"></div>
+
+	<!-- Hidden html elemnt for jQuery FormatCurrency plugin-->
+	<div id="formatCurrencyHelper" style="display:none"></div>
+</div>
+
+   </body>
+</html>
