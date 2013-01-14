@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app draggable="false" height="200" id="parish_dashboard" jsclass="Sample.Hello"
+     minimizable="false"
+     name="parish_dashboard"
+     width="200">
+	  <title>Hello World</title>
+	  <description/>
+
+	  <properties>
+		    <property datatype="string" defaultvalue="Techies !" label="Hello String"
+                name="helloString">
+			      <description>
+				Hello String
+			</description>
+		    </property>
+	  </properties>
+
+	  <presto-meta name="presto.desktopCompatible" type="text">true</presto-meta>
+
+	  <presto-meta name="presto.phoneCompatible" type="text">false</presto-meta>
+
+	  <presto-meta name="presto.tabletCompatible" type="text">false</presto-meta>
+
+	  <requires>
+		    <require src="js/app.js" type="script"/>
+		    <require src="css/app.css" type="css"/>
+		    <require src="html/app.html" type="html"/>
+	  </requires>
+</app>
