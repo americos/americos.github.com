@@ -1,0 +1,1411 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sc",
+				"script"
+			],
+			[
+				"copy_",
+				"copy_a"
+			],
+			[
+				"dono",
+				"donors_logic_rows"
+			],
+			[
+				"donors_logic",
+				"donors_logic_rows"
+			],
+			[
+				"pl",
+				"pledgeAverage"
+			],
+			[
+				"data",
+				"databatle"
+			],
+			[
+				"amount_pai",
+				"amount_paid_and_outstanding_pledges"
+			],
+			[
+				"st",
+				"stacked_chart"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"form",
+				"formatCurrency"
+			],
+			[
+				"formatC",
+				"formatCurrencyHelper"
+			],
+			[
+				"amo",
+				"amount_yellow"
+			],
+			[
+				"am",
+				"amount_green"
+			],
+			[
+				"amoun",
+				"amount_paid"
+			],
+			[
+				"To",
+				"TOTAL_MARKERS"
+			],
+			[
+				"B",
+				"Below"
+			],
+			[
+				"A",
+				"Average"
+			],
+			[
+				"json_",
+				"json_data3"
+			],
+			[
+				"b",
+				"backgroundColor"
+			],
+			[
+				"tot",
+				"total_map_markers"
+			],
+			[
+				"char",
+				"chart_options"
+			],
+			[
+				"ser",
+				"SERVER_IP"
+			],
+			[
+				"T",
+				"TOTAL_MARKERS"
+			],
+			[
+				"mar",
+				"markers_by_color"
+			],
+			[
+				"add",
+				"addRows"
+			],
+			[
+				"cha",
+				"chart_options"
+			],
+			[
+				"Am",
+				"Amount"
+			],
+			[
+				"fo",
+				"fourth"
+			],
+			[
+				"getD",
+				"getDataByYearAndID"
+			],
+			[
+				"da",
+				"data_year_2011"
+			],
+			[
+				"curr",
+				"current"
+			],
+			[
+				"sin",
+				"single_detail"
+			],
+			[
+				"de",
+				"details_for"
+			],
+			[
+				"det",
+				"details_by_date"
+			],
+			[
+				"details",
+				"details_by_date"
+			],
+			[
+				"data_",
+				"data_by_year"
+			],
+			[
+				"group",
+				"groupBy"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"num",
+				"number_of_transactions"
+			],
+			[
+				"par",
+				"parish_amounts"
+			],
+			[
+				"nu",
+				"number_of_pledges"
+			],
+			[
+				"av",
+				"average_amount_gift"
+			],
+			[
+				"graph",
+				"graphPath"
+			],
+			[
+				"th",
+				"third"
+			],
+			[
+				"per",
+				"percent_of_goal_paid"
+			],
+			[
+				"go",
+				"goal"
+			],
+			[
+				"ove",
+				"over_under_goal_based_on_pledges"
+			],
+			[
+				"Tota",
+				"TOTAL_AMOUNTS"
+			],
+			[
+				"c",
+				"cash"
+			],
+			[
+				"Tot",
+				"TOTAL_AMOUNTS"
+			],
+			[
+				"ple",
+				"pledges"
+			],
+			[
+				"Gift_",
+				"Gift_Amount"
+			],
+			[
+				"TO",
+				"TOTAL_AMOUNTS"
+			],
+			[
+				"gift",
+				"gift_amount"
+			],
+			[
+				"gi",
+				"gift_type"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"se",
+				"service_name"
+			],
+			[
+				"max",
+				"max_value"
+			],
+			[
+				"total",
+				"total_amount_balance"
+			],
+			[
+				"getT",
+				"getTotalAmountBalance"
+			],
+			[
+				"format",
+				"formatAmount"
+			],
+			[
+				"json",
+				"json_data"
+			],
+			[
+				"js",
+				"json_data"
+			],
+			[
+				"content",
+				"content_obj"
+			],
+			[
+				"ma",
+				"main_div"
+			],
+			[
+				"conten",
+				"content_obj"
+			],
+			[
+				"cont",
+				"content_obj"
+			],
+			[
+				"get",
+				"getInfoWindowContent"
+			],
+			[
+				"Info",
+				"InfoWindow"
+			],
+			[
+				"in",
+				"infobox"
+			],
+			[
+				"amou",
+				"amount_paid"
+			],
+			[
+				"sel",
+				"self"
+			],
+			[
+				"icon",
+				"iconPath"
+			],
+			[
+				"ampl",
+				"amount_pledged_average"
+			],
+			[
+				"amount",
+				"amount_paid"
+			],
+			[
+				"do",
+				"donors_logic"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"lon",
+				"longitude"
+			],
+			[
+				"map_",
+				"map_with_content"
+			],
+			[
+				"info",
+				"infowindow"
+			],
+			[
+				"goog",
+				"google_map"
+			],
+			[
+				"Map",
+				"mapTypeId"
+			],
+			[
+				"Pr",
+				"Preferred_ZIP"
+			],
+			[
+				"ta",
+				"table_options"
+			],
+			[
+				"d",
+				"draw"
+			],
+			[
+				"hi",
+				"hideColumns"
+			],
+			[
+				"dataT",
+				"DataTable"
+			],
+			[
+				"aou",
+				"amount_pledged"
+			],
+			[
+				"for",
+				"formatAmount"
+			],
+			[
+				"trans",
+				"transactions_html"
+			],
+			[
+				"tra",
+				"transactions_html"
+			],
+			[
+				"non",
+				"non_pledge_transactions"
+			],
+			[
+				"row",
+				"row_selected"
+			],
+			[
+				"dat",
+				"dataTable"
+			],
+			[
+				"di",
+				"dialog_container"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"a",
+				"amount_pledged"
+			],
+			[
+				"gr",
+				"grid_container"
+			],
+			[
+				"Cons",
+				"Constituent_ID"
+			],
+			[
+				"date",
+				"dateFormatType"
+			],
+			[
+				"v",
+				"visualization"
+			],
+			[
+				"w",
+				"w14"
+			],
+			[
+				"g",
+				"getElementById"
+			],
+			[
+				"con",
+				"control_container"
+			],
+			[
+				"test",
+				"testGoogleGauge"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"tab",
+				"table-cell"
+			],
+			[
+				"te",
+				"test_data"
+			],
+			[
+				"draw",
+				"drawChart"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"paris",
+				"parish_info"
+			],
+			[
+				"app",
+				"appURL"
+			],
+			[
+				"HEL",
+				"HelloWorld"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"jq",
+				"jQuery.sub	jQuery.sub"
+			],
+			[
+				"valu",
+				"values"
+			],
+			[
+				"fa",
+				"function_name"
+			],
+			[
+				"i",
+				"ife	if … else"
+			],
+			[
+				"Inciden",
+				"incident"
+			],
+			[
+				"time",
+				"time_stamp"
+			],
+			[
+				"r",
+				"result"
+			],
+			[
+				"tim",
+				"time_stamp"
+			],
+			[
+				"I",
+				"Incidents"
+			],
+			[
+				"inci",
+				"incidents_by_type"
+			],
+			[
+				"git",
+				"Git"
+			],
+			[
+				"e",
+				"Error"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 27.0,
+		"selected_items":
+		[
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"conv l",
+				"Convert Case: Lower Case"
+			],
+			[
+				"case",
+				"Convert Case: Title Case"
+			],
+			[
+				"",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"cas",
+				"Convert Case: Upper Case"
+			],
+			[
+				"con up",
+				"Convert Case: Upper Case"
+			],
+			[
+				"con lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lo ca",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"syn ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – Default"
+			],
+			[
+				"onready",
+				"Snippet: document ready - jQuery"
+			],
+			[
+				"jquery",
+				"Snippet: <script> (code.jquery.com)"
+			],
+			[
+				"scr",
+				"Snippet: script_src"
+			],
+			[
+				"folder",
+				"Project: Add Folder"
+			],
+			[
+				"add ",
+				"Project: Add Folder"
+			],
+			[
+				"req",
+				"Snippet: require"
+			],
+			[
+				"req ",
+				"Snippet: require"
+			],
+			[
+				"sni req",
+				"Snippet: require"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"new file",
+				"File: New File Relative to Current View"
+			],
+			[
+				"Snippet: r",
+				"Snippet: require"
+			],
+			[
+				"snip",
+				"Snippet: jQuery Mobile: Slider"
+			],
+			[
+				"sni",
+				"Snippet: script_src"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"copy",
+				"File: Copy as Tag style"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"gist:",
+				"Gist: Open Gist"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"fetc",
+				"Fetch"
+			],
+			[
+				"fet",
+				"Fetch: Manage remote files"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"syn jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet ",
+				"Snippet: html"
+			],
+			[
+				"jquery ",
+				"Snippet: jQuery.browser"
+			],
+			[
+				"jque rea",
+				"Snippet: jQuery ready function"
+			],
+			[
+				"jquery rea",
+				"Snippet: jQuery ready function"
+			],
+			[
+				"jque cli",
+				"Snippet: jQuery click handler"
+			],
+			[
+				"snipp fun",
+				"Snippet: Function"
+			],
+			[
+				"snipp",
+				"Snippet: if"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn json",
+				"Set Syntax: JSON"
+			],
+			[
+				"syntax ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn",
+				"Set Syntax: YAML"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 174.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/google_grid.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/css/google_maps.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/dashboard_data.json",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/sorting_date_as_string.html",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/donors_grid_logic.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/xx.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/parish_info.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/google_chart_range_filter.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/html/app.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/fusion_pyramid.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/pyramid.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/css/app.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/google_maps.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/map.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/index.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/app.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/App.xml",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/stacked.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/fusion_stacked.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/led.html",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/css/roundedCorners.sublime-snippet",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/vendor/jQuery/plugins/jquery.formatCurrency-1.4.0.min.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/google_gauge.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/fusion_led.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/fusion_pyrimid.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/js/google_chart_pie.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/css/google_grid.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/css/parish_info.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/geocoding_steps.txt",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/vendor/google_maps_utilities/infobox/examples/infobox-basic.html",
+		"/Users/americosavinon/dev/JackBe/Clients - Projects/Adelante/solicitor2011_2012.csv",
+		"/Users/americosavinon/Desktop/delete me/latlon.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/vendor/jQueryUI/jquery-ui.min.js",
+		"/Users/americosavinon/dev/JackBe/Clients - Projects/Adelante/solicitor_addresses.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/xx.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/components/test_google_chart_range_filter.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/components/test_google_gauge.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/components/test_parish_info.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/grid.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/vendor/jQueryUI/themes/eggplant/jquery.ui.autocomplete.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/vendor/underscore/underscore.js",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/google_chart_range_filter/chart.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/chart_range_filter.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test/samples/dashboard.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/google_gauge/gauge.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/parish_info/test_data_parish_info.csv",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/led_widget/led_data.csv",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Terminal/Base File.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Alignment/Default (OSX).sublime-keymap",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/xx.html",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/led/led_data.csv",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/presto/require.sublime-snippet",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/javascript_snippet/testSnippet.sublime-snippet",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/css/themes/south-street/jquery.ui.all.css",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/xx.txt",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/Adelante.sublime-project",
+		"/Users/americosavinon/Sites/Presto35Apps/Adelante/Adelante.sublime-workspace",
+		"/Users/americosavinon/dev/JackBe/Clients - Projects/Adelante/dev/AdelanteDashboards.sublime-project",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/package.json",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/test/index.html",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/app/index.html",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/test/lib/chai.js",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/test/runner/mocha.js",
+		"/Users/americosavinon/Desktop/delete me/yeomanTest/app/robots.txt",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/xx/xx.html",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/multiple-series/css/lib.css",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/LiveReload/README.md",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/LiveReload/messages/install_upgrade.txt",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/LiveReload/messages.json",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/LiveReload/package-metadata.json",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/xx.js",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Gist/Gist.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/Gist.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/AdvancedNewFile/README.rst",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/xx/xx.js",
+		"/xx/test/xx.js",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/hello-world/js/lib.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/build.xml",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/build.properties",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/multiple-series/js/underscore-min.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/multiple-series/js/highcharts-min.js",
+		"/Users/americosavinon/Desktop/delete me/xx.html",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/javascript_snippet/script_src.sublime-snippet",
+		"/Users/americosavinon/Desktop/delete me/americo.coffee",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/chord-diagram/css/lib.css",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/multiple-series/js/lib.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/multiple-series/thumbnail/Chart_Spline_Chart_01.png",
+		"/Users/americosavinon/dev/JackBe/Presto3.5_github/pluggable-views/build.xml",
+		"/Users/americosavinon/dev/JackBe/Presto3.5_github/pluggable-views/libs/hello-world/js/lib.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5_github/pluggable-views/build.properties",
+		"/Users/americosavinon/dev/JackBe/Presto3.5_github/prestocli35/dist/prestocli.jar",
+		"/Users/americosavinon/dev/JackBe/Presto3.5_github/pluggable-views/README.md",
+		"/Users/americosavinon/Sites/Presto35Apps/DC_incidents/js/underscore-min.js",
+		"/Users/americosavinon/Sites/Presto35Apps/DC_incidents/js/highcharts.js",
+		"/Users/americosavinon/Sites/Presto35Apps/DC_incidents/App.xml",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Alignment/Base File.sublime-settings",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/spline-chart/js/lib.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/chord-diagram/js/lib.js",
+		"/Users/americosavinon/dev/JackBe/Presto3.5Testing/custom-views/libs/chord-diagram/js/MatrixCreator.js",
+		"/Users/americosavinon/dev/JackBe/O2E/README.markdown",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/dot/src/webapp/index.jsp",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/src/webapp/index.jsp",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/src/webapp/version.jsp",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/src/webapp/js/sw/SimpleWindow.js",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/src/webapp/js/sw/Application.js",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/src/webapp/js/lib/exts/TabToolbar.js",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/strategicwatch/build.xml",
+		"/Users/americosavinon/dev/JackBe/O2E/wf/demos/smithsonian/src/webapp/admin-console.jsp",
+		"/Users/americosavinon/dev/JackBe/O2E/settings.xml",
+		"/Users/americosavinon/dev/Javascript/Jasmine/helloWorld/lib/jasmine-1.1.0/MIT.LICENSE"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/",
+			"/Users/americosavinon/Sites/Presto35Apps/Adelante/parish_dashboard/test_data/google_gauge",
+			"",
+			"guage.csv",
+			"<open files>,*.js",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"createDialogHTML",
+			"component_title",
+			"	\n",
+			"app.js",
+			"../",
+			"/>",
+			"require",
+			"theme",
+			"copy_a[2]",
+			"copy_b[0]",
+			"copy_a[0]",
+			"_a",
+			"da",
+			"ww",
+			"val",
+			"ww",
+			"over_under_goal_based_on_pledges",
+			"over_under_goal_based_on_pledges\n",
+			"over_under_goal_based_on_pledges\nover_under_goal_based_on_pled",
+			"over_under_goal_based_on_pledges",
+			"amount_paid_and_outstanding_pledges",
+			"percent",
+			"presto",
+			"SERVER_IP",
+			"filter",
+			"10px",
+			"Number: ",
+			"cc",
+			"cool",
+			"90",
+			"total_map_markers",
+			"80",
+			"Number of",
+			"pyramidYScale",
+			"190",
+			"110",
+			"90",
+			"html",
+			"total_map_markers",
+			"map",
+			"logo",
+			"w13",
+			"pyramid_chart",
+			"VLED",
+			"addPointsToMap",
+			"getMarkerCountByColor",
+			"self.markers",
+			"getIcon",
+			"data",
+			"Data",
+			"data",
+			"chart_container",
+			"string",
+			", ",
+			" 3",
+			"3",
+			"366898",
+			", \"",
+			" ]",
+			"options",
+			"chart_range_filter",
+			"current_year_label",
+			"Annual",
+			"Annual Appeal-2012",
+			"donors_grid_logic",
+			".details_table",
+			"normalizeObject",
+			"data_current_year_by_id",
+			"data_by_constituent",
+			"normalizeObject",
+			"data_by_year",
+			"data_by_constituent",
+			"INDEXES",
+			"plege",
+			"span",
+			"div",
+			"parish_percents",
+			"TOTAL_AMOUNTS",
+			"pledgeAverage",
+			"div",
+			"\"<tr>\"",
+			"led_amount_paid_outstanding_pledges",
+			"led_amount_goal",
+			"amount_paid",
+			"transactions_by_id",
+			"group_of_elems",
+			"elem",
+			"onors_logic.getRows()",
+			"getRows",
+			"240",
+			"24px",
+			"div",
+			"third",
+			"var",
+			"thrid",
+			"total_balance",
+			"total_amount_pledged",
+			"total",
+			"add all",
+			"h3",
+			"myInfoWindow",
+			"]",
+			"	",
+			"'",
+			"#",
+			"\"",
+			"classname",
+			"})",
+			"})\n",
+			"on(\"click\", ",
+			"add_markers",
+			"icon_paths",
+			"\"h",
+			"../images/map_markers/",
+			"<label>",
+			"amount_pledged_total",
+			"self.pledgeAverage",
+			"pledgeAverage",
+			"defaults.pledgeAverage",
+			"pledgeAverage",
+			"self.amount_pledged_total",
+			"amount_pledged_total",
+			"icon_paths",
+			"formatAmount",
+			"elem",
+			"formatAmount",
+			"elem",
+			"longitude"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"],",
+			",",
+			"\"",
+			"",
+			"\"",
+			"",
+			"],",
+			"",
+			"multiple-series",
+			"my_name"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"dono",
+				"parish_dashboard/js/donors_grid_logic.js"
+			],
+			[
+				"gr",
+				"parish_dashboard/js/google_grid.js"
+			],
+			[
+				"grid",
+				"parish_dashboard/js/google_grid.js"
+			],
+			[
+				"pa",
+				"parish_dashboard/js/parish_info.js"
+			],
+			[
+				"googl",
+				"parish_dashboard/js/google_chart_range_filter.js"
+			],
+			[
+				"app",
+				"parish_dashboard/js/app.js"
+			],
+			[
+				"p",
+				"parish_dashboard/test/samples/pyramid.html"
+			],
+			[
+				"pyr",
+				"parish_dashboard/js/fusion_pyramid.js"
+			],
+			[
+				"ap",
+				"parish_dashboard/App.xml"
+			],
+			[
+				"goo",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"st",
+				"parish_dashboard/js/fusion_stacked.js"
+			],
+			[
+				"py",
+				"parish_dashboard/test/samples/pyramid.html"
+			],
+			[
+				"google_g",
+				"parish_dashboard/js/google_grid.js"
+			],
+			[
+				"led",
+				"parish_dashboard/test/samples/led.html"
+			],
+			[
+				"fusion",
+				"parish_dashboard/js/fusion_pyramid.js"
+			],
+			[
+				"char",
+				"parish_dashboard/js/google_chart_range_filter.js"
+			],
+			[
+				"sta",
+				"parish_dashboard/test/samples/stacked.html"
+			],
+			[
+				"fusion_p",
+				"parish_dashboard/js/fusion_pyramid.js"
+			],
+			[
+				"gooma",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"googlema",
+				"parish_dashboard/css/google_maps.css"
+			],
+			[
+				"google",
+				"parish_dashboard/js/google_gauge.js"
+			],
+			[
+				"goog",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"le",
+				"parish_dashboard/js/fusion_led.js"
+			],
+			[
+				"chart",
+				"parish_dashboard/js/google_chart_range_filter.js"
+			],
+			[
+				"",
+				"parish_dashboard/js/app.js"
+			],
+			[
+				"maps",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"rang",
+				"parish_dashboard/js/google_chart_range_filter.js"
+			],
+			[
+				"go",
+				"parish_dashboard/js/google_grid.js"
+			],
+			[
+				"ga",
+				"parish_dashboard/js/google_gauge.js"
+			],
+			[
+				"gp",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"goocss",
+				"parish_dashboard/css/google_grid.css"
+			],
+			[
+				"css",
+				"parish_dashboard/css/app.css"
+			],
+			[
+				"gag",
+				"parish_dashboard/js/google_gauge.js"
+			],
+			[
+				"gauge",
+				"parish_dashboard/js/google_gauge.js"
+			],
+			[
+				"par",
+				"parish_dashboard/js/parish_info.js"
+			],
+			[
+				"map",
+				"parish_dashboard/js/google_maps.js"
+			],
+			[
+				"gri",
+				"parish_dashboard/js/google_grid.js"
+			],
+			[
+				"app.c",
+				"parish_dashboard/css/app.css"
+			],
+			[
+				"par.",
+				"parish_dashboard/css/parish_info.css"
+			],
+			[
+				"ma",
+				"parish_dashboard/css/google_maps.css"
+			],
+			[
+				"infob",
+				"parish_dashboard/vendor/google_maps_utilities/infobox/examples/infobox-basic.html"
+			],
+			[
+				".txt",
+				"parish_dashboard/test/samples/geocoding_steps.txt"
+			],
+			[
+				"app.cs",
+				"parish_dashboard/css/app.css"
+			],
+			[
+				"app.h",
+				"parish_dashboard/html/app.html"
+			],
+			[
+				".css",
+				"parish_dashboard/css/google_maps.css"
+			],
+			[
+				"lo",
+				"parish_dashboard/js/donors_grid_logic.js"
+			],
+			[
+				"app.js",
+				"parish_dashboard/js/app.js"
+			],
+			[
+				"app.x",
+				"parish_dashboard/App.xml"
+			],
+			[
+				"app.",
+				"parish_dashboard/vendor/jQueryUI/themes/eggplant/jquery.ui.autocomplete.css"
+			],
+			[
+				"pari",
+				"parish_dashboard/js/parish_info.js"
+			],
+			[
+				"paris",
+				"parish_dashboard/css/parish_info.css"
+			],
+			[
+				"js",
+				"parish_dashboard/js/app.js"
+			],
+			[
+				"li",
+				"libs/multiple-series/js/lib.js"
+			],
+			[
+				"lib.c",
+				"libs/chord-diagram/css/lib.css"
+			],
+			[
+				"pro",
+				"build.properties"
+			],
+			[
+				"pr",
+				"build.properties"
+			],
+			[
+				"buil",
+				"build.xml"
+			],
+			[
+				"git",
+				"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings"
+			],
+			[
+				"status",
+				"/Users/americosavinon/Library/Application Support/Sublime Text 2/Packages/Git/Git.sublime-settings"
+			],
+			[
+				"r",
+				"README.markdown"
+			],
+			[
+				"settin",
+				"settings.xml"
+			],
+			[
+				"mit",
+				"lib/jasmine-1.1.0/MIT.LICENSE"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true
+}
