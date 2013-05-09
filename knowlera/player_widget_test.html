@@ -3,7 +3,8 @@
 	<title>Player Widget Test </title>
 </head>
 
-	<h1>Large Player Widget</h1>
+	<!-- LARGE PLAYER WIDGET -->
+	<!-- <h1>Large Player Widget</h1>
 	<script type="text/javascript" class="_msPWEmbedScript">
       if (document.getElementById("mspwScr") == null ) {
         (function() {
@@ -16,7 +17,22 @@
       var _mspwStr = "{\"content\":\"votd-cat\",\"width\":\"512\",\"height\":\"315\",\"category_id\":\"217\",\"ad_position\":\"below\",\"pubId\":\"AMERICOS\",\"autoplay\":\"false\"}";
       _mspwConfig.push( _mspwStr );
 	</script>
-	<div class="monkeysee_pw_wrapper" style="width:512px;height:315px;"></div>
+	<div class="monkeysee_pw_wrapper" style="width:512px;height:315px;"></div> -->
+
+	<h1>Medium Player Widget</h1>
+	<script type="text/javascript" class="_msPWEmbedScript">
+      if (document.getElementById("mspwScr") == null ) {
+        (function() {
+          var mspw_main = document.createElement('script'); mspw_main.id='mspwScr'; mspw_main.type='text/javascript'; mspw_main.async=true;
+          mspw_main.src = 'http://localhost:3000/javascripts/widgets/new_ms__widget.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mspw_main, s);
+        })();
+      }
+      var _mspwConfig = _mspwConfig || [];
+      var _mspwStr = "{\"content\":\"votd-cat\",\"width\":\"512\",\"height\":\"315\",\"category_id\":\"217\",\"ad_position\":\"below\",\"pubId\":\"AMERICOS\",\"autoplay\":\"false\"}";
+      _mspwConfig.push( _mspwStr );
+</script>
+<div class="monkeysee_pw_wrapper" style="width:512px;height:315px;"></div>
 
 <body>
 </body>
