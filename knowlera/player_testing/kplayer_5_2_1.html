@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="swfobject.js"></script>
+</head>
+<body>
+
+	<h2>kPlayer 5.2</h2>
+
+	<div id="player_container">
+  	To properly view this site, javascript must be enabled and Flash version 9 or higher must be installed.<br />
+  <a href="http://www.macromedia.com/go/getflashplayer/">Get the latest Flash player</a>
+        </div>
+        <div id="ad300x250" class="ad"></div>
+
+        <script type="text/javascript">
+          // <![CDATA[
+          var so = new SWFObject("kplayer_versions/KPShare.swf.5.2", "KPlayer", "512", "315",
+              "9", "#FFFFFF");
+          so.addParam('scale', 'noScale');
+          so.addParam("allowFullScreen", "true");
+          so.addParam("allowScriptAccess", "always");
+          so.addParam("wmode", "direct");
+          so.addVariable("videoId", "3055");
+          so.addVariable("clipId", "10355");
+          so.addVariable("autoplay", "true");
+          so.addVariable("debug", "debuGGing");
+          so.addVariable("key", "MonkeySee");
+          so.addVariable("cid", "ad300x250");
+          so.addVariable("addConn", "SPORTSANDLEISURE");
+          so.write("player_container");
+          // ]]>
+        </script>
+  </div>
+
+</body>
+</html>
