@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>Test JW Player</title>
+</head>
+	
+	<script type="text/javascript" src="../jwplayer.js" ></script>
+	<script type="text/javascript">jwplayer.key="wgM+ikG4cDbA9b4hPfl2GyCQjxzuIQDET9n+xg==";</script>
+
+<body>
+	<div id="myElement">Loading the player ...</div>
+
+	<script type="text/javascript">
+    jwplayer("myElement").setup({
+        file: "sample.mov",
+        height: 360,
+        image: "sample.jpg",
+        width: 640,
+        advertising: {
+        	client: "vast",
+        	tag: "http://demo.tremorvideo.com/proddev/vast/vast_inline_linear.xml"
+        }
+    });
+	</script>
+
+</body>
+</html>
