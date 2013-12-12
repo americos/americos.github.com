@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Knowlera's Ad Test</title>
+
+	<!-- jQuery -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+	<!-- JW Player -->
+  <script type="text/javascript" src="http://knowlera.vo.llnwd.net/o18/jwplayer/6_6/jwplayer.js"></script>
+  <script type="text/javascript">jwplayer.key="wgM+ikG4cDbA9b4hPfl2GyCQjxzuIQDET9n+xg==";</script>
+
+  <!-- Code -->
+  <script type="text/javascript">
+
+	$(document).ready(function(){
+			
+			function play(quality){
+
+				var player_config = {
+					height			: 360,
+			    width				: 640,
+			    autostart		: false,
+			    // primary			: "flash", //Setting primary flash since many ads are Flash based
+			    playlist		: [
+			    	{
+			    		sources: [
+			    			{
+			    				file: "http://knowlera.vo.llnwd.net/o18/test_video_handbrake_baseline-3.0_12-11-13.mp4"
+			    			}
+			    			
+			    		]
+			    	}
+			    ]
+				};
+				jwplayer("player").setup( player_config );	
+
+				
+			};
+			
+			play();
+
+	});
+	</script>
+
+	<style type="text/css">
+		
+		#container{
+			position: relative;
+			left: 25px;
+		}
+		
+		.hidden{ display:none;}
+
+	</style>
+
+</head>
+<body>
+	
+	<div style="position:relative; left:100px;text-outline: 1px10px;">
+	
+		<h1>test_video_handbrake_baseline-3.0_12-11-13.mp4 </h1>
+		<div id="player"></div>
+		<hr>
+
+		<div></div>
+	
+		<div id="errors" style="color:red;"></div>
+	</div>
+		
+
+	</div>
+
+	
+
+	
+
+</body>
+</html>
